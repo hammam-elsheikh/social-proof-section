@@ -1,0 +1,139 @@
+@use "global";
+
+$primary-color: hsl(300, 43%, 22%);
+$header-p-color: hsl(303, 10%, 53%);
+$rated-bg-color: hsl(300, 24%, 96%);
+$verified-color: hsl(333, 80%, 67%);
+
+body {
+  text-align: center;
+  padding: 80px min(1.5em, 50px);
+  background: url("../images/bg-pattern-top-mobile.svg") top left / auto
+      no-repeat,
+    url("../images/bg-pattern-bottom-mobile.svg") bottom right / auto no-repeat;
+
+  header {
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: $primary-color;
+    }
+
+    p {
+      color: $header-p-color;
+      margin: 30px 0;
+    }
+  }
+
+  .stars {
+    margin-bottom: 8px;
+  }
+
+  .rated {
+    background-color: $rated-bg-color;
+    color: $primary-color;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 20px;
+
+    p {
+      margin: 5px 0;
+      font-weight: 700;
+    }
+  }
+
+  .testmonials {
+    margin-top: 50px;
+    .testmonial {
+      padding: 2.2em 2em;
+      background-color: $primary-color;
+      border-radius: 0.5em;
+      margin-bottom: 20px;
+
+      .author {
+        margin-bottom: 25px;
+
+        .avatar {
+          width: 40px;
+          border-radius: 50%;
+        }
+
+        .name {
+          color: white;
+          font-weight: 500;
+        }
+
+        .verified {
+          color: $verified-color;
+        }
+      }
+
+      .content p {
+        color: $rated-bg-color;
+        margin: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    padding: 100px 120px;
+
+    background: url("../images/bg-pattern-top-desktop.svg") top left / auto
+        no-repeat,
+      url("../images/bg-pattern-bottom-desktop.svg") bottom right / auto
+        no-repeat;
+
+    .top-section {
+      display: flex;
+
+      header {
+        text-align: left;
+        width: 50%;
+
+        h2 {
+          font-size: 58px;
+        }
+      }
+
+      .rating {
+        width: 50%;
+
+        .rated {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 400px;
+          gap: 30px;
+          padding: 10px;
+        }
+
+        .rated-2 {
+          position: relative;
+          left: 40px;
+        }
+
+        .rated-3 {
+          position: relative;
+          left: 80px;
+        }
+      }
+    }
+
+    .testmonials {
+      display: flex;
+
+      .testmonial-2 {
+        position: relative;
+        top: 15px;
+      }
+
+      .testmonial-3 {
+        position: relative;
+        top: 30px;
+      }
+    }
+  }
+}
