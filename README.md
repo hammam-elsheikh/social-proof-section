@@ -26,21 +26,19 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/hammam-elsheikh/social-proof-section)
 - [Live Site URL](https://himo-dev-social-proof-section.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
-- scss
+- Scss
 - Flexbox
-- CSS Grid
 
 ### What I learned
 
 linear gradient background between two pics
 
 ## Author
-
+- Linkedin - [@hammam-elsheikh](https://www.linkedin.com/in/hammam-elsheikh/)
 - Frontend Mentor - [@hammam-elsheikh](https://www.frontendmentor.io/profile/hammam-elsheikh)
 - Twitter - [@hammamelsheikh](https://www.twitter.com/hammamelsheikh)
